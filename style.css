@@ -112,3 +112,33 @@ button:hover {
 }
 
 
+#confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#hint-button {
+    position: relative;
+}
+
+#hint-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 7%;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    transform: translateY(-50%);
+    display: none;
+}
+
+#hint-button.completed::after {
+    display: block;
+}
+
+

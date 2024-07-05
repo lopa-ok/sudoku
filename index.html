@@ -14,12 +14,16 @@
         <h1 class="title">Lopa's Sudoku</h1>
         <div class="timer">Time: <span id="timer">00:00</span></div>
         <table id="sudoku-grid"></table>
+        <div id="buttons">
+            <button id="hint-button" class="game-button">Hint (3 left)</button>
+        </div>
         <div id="congratulations-screen" class="hidden">
             <div id="congratulations-message">
                 <h2>Congratulations!</h2>
                 <p>You solved the Sudoku in <span id="congratulations-time"></span>!</p>
-                <button id="restart-button" class="game-button">Play Again</button>
+                <button id="play-again-button" class="game-button">Play Again</button>
             </div>
+            <canvas id="confetti-canvas"></canvas>
         </div>
         
         
