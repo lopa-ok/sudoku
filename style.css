@@ -7,6 +7,10 @@ body {
     margin: 0;
     font-family: 'Press Start 2P', cursive;
 }
+.game-button {
+    font-family: 'Press Start 2P', sans-serif;
+}
+
 
 .sudoku-container {
     text-align: center;
@@ -14,17 +18,23 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
 }
 
-h1 {
+.title {
     margin-bottom: 10px;
-    font-family: 'Press Start 2P', cursive;
     font-size: 2rem;
+}
+
+.timer {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 table {
     border-collapse: collapse;
-    margin: 20px auto;
+    margin: 0 auto 20px;
 }
 
 td {
@@ -83,3 +93,22 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+.hidden {
+    display: none;
+}
+
+#congratulations-screen {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+
